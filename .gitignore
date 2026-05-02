@@ -1,0 +1,19 @@
+# Built binaries
+aiharness
+aiharness.exe
+
+# Go build output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage command
+*.out
+
+# Dependency directories
+vendor/

@@ -11,6 +11,33 @@ Implements the agentic loop described in [The Emperor Has No Clothes](https://ww
 - Works with any OpenAI-compatible provider
 - Built-in tool support: `read_file`, `list_files`, `edit_file`
 
+## Build
+
+### Linux / macOS
+
+```bash
+go build -o aiharness .
+./aiharness run --api-key $OPENROUTER_KEY
+```
+
+### Windows
+
+Open a command prompt or PowerShell and run:
+
+```powershell
+go build -o aiharness.exe .
+.\aiharness.exe --help
+```
+
+Or simply use `cmd`:
+
+```
+go build -o aiharness.exe .
+aiharness.exe --help
+```
+
+The `.exe` extension is required on Windows.
+
 ## Install
 
 ```bash
@@ -22,10 +49,17 @@ Or clone and build:
 ```bash
 git clone https://github.com/anomalyco/aiharness.git
 cd aiharness
+
+# Linux/macOS
 go build -o aiharness .
+
+# Windows
+go build -o aiharness.exe .
 ```
 
 ## Usage
+
+> **Note for Windows:** If built on Windows, use `aiharness.exe` (with .exe extension).
 
 ```bash
 # OpenRouter (default, free tier)
